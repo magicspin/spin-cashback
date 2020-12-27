@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Spin and win Prize</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/Winwheel.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+    </head>
+    <body style="background-image: url('back_gift.jpeg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;">
+        
+      <div  align="center">
+        <div class="row">
+            <div class="col-md-2 col-lg-2 hidden-xs hidden-sm"></div>
+       
+            <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12" style="background-color: rgb(53, 39, 39); box-shadow: inset 0 0 10px #000000;">
+              <div  >
+                <h1 style="margin-top: 10%; color:rgb(241, 247, 241); font-weight:bold; font-size:60px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">SPIN AND GET THE PRIZE </h1>
+                <div  class="the_wheel" style="width:719px; height:800px;">
+                <canvas id="canvas" width="719" height="800">
+                  <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                </canvas></div>
+                <div class="power_controls">
+                  <center>
+                    <img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" style="position: sticky;
+                      
+                        width: 30%;"/>
+                  </center>
+                  <div class="col-xs-12 hidden-lg hidden-md"  >
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </div>
+                  <!--&nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
+                        -->
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-2 hidden-xs hidden-sm"></div>
+
+        </div>
+        
+        <!--<table cellpadding="0" cellspacing="0" border="0"><tr><td align="center" valign="center"></td></tr></table>-->
+        
+      </div>
+           
+            
+
+<div class="modal fade" id="myDialog" role="dialog">
+    <div class="modal-dialog" style="top:25%;">
+
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color: transparent;">
+        <div class="modal-header btn-primary" style="background-color: transparent; border-bottom: none; ">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2> Congratulations......</h2>
+          <img src="WS2k.gif" width="80%" style="position:absolute;top:-109%"/>
+        </div>
+        <div class="modal-body" style="background-color: rgba(245, 245, 245, 0); background-image:url(ticket.png); background-size:80%;     background-position: center;
+        background-repeat: no-repeat;padding:90px;">
+
+           <center><h1 style="font-weight:bold; font-size:40px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">  Won <span class="won" style="font-weight:bold; color:white;"> </psan> </h1>
+           </center>
+           <img src="WS2k.gif" width="80%" style="position:absolute;top:59%;left:-43%;"/>
+        </div>
+        
+        <div class="modal-footer" style="background-color: rgba(245, 245, 245, 0); border-top: none;">
+          
+          <img src="WS2k.gif" width="80%" style="position:absolute;top:109%"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/driver.js"></script>
+    </body>
+</html>
