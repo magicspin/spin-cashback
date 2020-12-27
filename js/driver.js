@@ -96,7 +96,7 @@ function startSpin() {
 					break;
 				}
 			}
-			theWheel.animation.stopAngle = stopAt;
+			// theWheel.animation.stopAngle = stopAt;
 
 			theWheel.startAnimation();
 			wheelSpinning = true;
