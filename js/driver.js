@@ -100,7 +100,8 @@ function startSpin() {
 
 			theWheel.startAnimation();
 			wheelSpinning = true;
-			localStorage.setItem('spin_status', true);
+			count = true;
+			localStorage.setItem('spin_status', count);
 		}
 	} else {
 		alert('Sorry you ran out of turns');
@@ -144,4 +145,5 @@ function alertPrize(indicatedSegment) {
 	document.getElementById('spin_button').src = 'spin_on.png';
 	document.getElementById('spin_button').className = 'clickable';
 	wheelSpinning = false; // Reset to false to power buttons and spin can be clicked again.
+	localStorage.setItem('spin_status', true);
 }
