@@ -9,6 +9,11 @@
         <script src="js/TweenMax.min.js"></script>
         <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <style>
+          .mdc-dialog__content {
+            font-size: 1.4rem!important;
+          }
+        </style>
     </head>
     <body style="background-image: url('back_gift.jpeg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;">
         
@@ -37,7 +42,7 @@
                         -->
                 </div>
               </div>
-
+              
             </div>
             <div class="col-md-2 hidden-xs hidden-sm"></div>
 
@@ -77,14 +82,13 @@
 </div>
 <div class="mdc-dialog">
   <div class="mdc-dialog__container">
-    <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title"
-      aria-describedby="my-dialog-content">
-      <div class="mdc-dialog__content" id="my-dialog-content">
+    <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true">
+      <div class="mdc-dialog__content">
         Sorry you ran out of turns
       </div>
       <div class="mdc-dialog__actions">
         </button>
-        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
           <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Close</span>
         </button>
