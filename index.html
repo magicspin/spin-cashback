@@ -7,6 +7,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/Winwheel.js"></script>
         <script src="js/TweenMax.min.js"></script>
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     </head>
     <body style="background-image: url('back_gift.jpeg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;">
         
@@ -19,7 +21,7 @@
                 <h1 style="margin-top: 10%; color:rgb(241, 247, 241); font-weight:bold; font-size:60px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">SPIN AND GET THE PRIZE </h1>
                 <div  class="the_wheel" style="width:719px; height:800px;">
                 <canvas id="canvas" width="719" height="800">
-                  <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                  <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
                 </canvas></div>
                 <div class="power_controls">
                   <center>
@@ -73,7 +75,24 @@
     </div>
   </div>
 </div>
-
+<div class="mdc-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__content" id="my-dialog-content">
+        Sorry you ran out of turns
+      </div>
+      <div class="mdc-dialog__actions">
+        </button>
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
 <script type="text/javascript" src="js/driver.js"></script>
     </body>
 </html>
