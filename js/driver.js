@@ -1,5 +1,3 @@
-mdc.autoInit();
-dialog = mdc.dialog.MDCDialog.attachTo(document.querySelector('.mdc-dialog'));
 let count = localStorage.getItem('spin_status') || false;
 let avoid = [];
 let num = [5, 15, 50];
@@ -106,7 +104,7 @@ function startSpin() {
 			localStorage.setItem('spin_status', count);
 		}
 	} else {
-		dialog.open();
+		$('#myDialog1').modal('show');
 	}
 }
 
